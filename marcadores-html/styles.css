@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+  }
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+  }
+  .marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+  }
+  .separador{
+    width:60px;
+    height:25px;
+  }
+  .marco {
+    height: 25px;
+    widht: 110px;
+    background-color: rgba(255,255,255,0.5);
+    border-left: 10px double rgba(0, 0, 0, 75%);
+  }
+  .marco,
+  .separador {
+    display: inline-block;
+  }
+  .one {
+    background: linear-gradient(rgb(255, 50, 50), rgb(120, 0, 0), rgb(50, 0, 0));
+    box-shadow: 5px 5px red;
+  }
+  .green {
+    background: linear-gradient(#55680d, #71f53e, #116c31);
+    box-shadow: 5px 5px 5px green;
+  }
+  .three {
+    background: linear-gradient(
+      hsl(186, 76%, 16%),
+      hsl(223, 90%, 60%),
+      hsl(240, 56%, 42%)
+    );
+    box-shadow: 5px 5px 5px 5px blue;
+  }
+  
+  
+  
+  
