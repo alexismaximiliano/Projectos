@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Formulario de registro</h1>
+  <p>Por favor rellene el formulario requerido</p>
+  <form action="https://register-demo.freecodecamp.org" method="post">
+    <fieldset>
+      <label for="nombre">Nombre: <input id="nombre" type="text" required></label>
+      <label for="apellido">Apellido: <input id="apellido" type="text" required></label>
+      <label for="email">Email: <input id="email" type="email" required></label>
+      <label for="contraseña">Contraseña: <input id=contraseña type="password" minlength="8" required></label>
+    </fieldset>
+    <fieldset>
+      <label for="cuenta-personal"><input class="inline" id="cuenta-personal" name="tipo-cuenta" type="radio"> Cuenta Personal</label>
+      <label for="cuenta-negocios"><input class="inline" for="cuenta-negocios" name="tipo-cuenta" type="radio"> Cuenta de negocios</label>
+    </fieldset>
+    <fieldset>
+      <label for="foto-perfil">Subir foto de perfil: <input name="foto-perfil" id="foto-perfil" type="file"></label>
+      <label for="edad">Ingrese su edad: <input id="edad" name="edad" type="number" min="18" max="100"></label>
+      <label for="referencia">¿Cómo te enteraste de nosotros?
+        <select name="referencia" id="referencia">
+          <option value="">(seleccione una)</option>
+          <option value="1">Redes sociales</option>
+          <option value="2">Foros</option>
+          <option value="3">Pagina Web</option>
+          <option value="4">Otro medio</option>
+        </select>
+      </label>
+      <label for="bio">Describite: <textarea name="bio" id="bio" cols="30" rows="3" placeholder="agregar una pequeña descripcion sobre ti"></textarea></label>
+    </fieldset>
+    <label for="terminos-condiciones"><input for="terminos-condiciones" class="inline" type="checkbox"> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">Terminos y Condiciones</a></label>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+</html>
