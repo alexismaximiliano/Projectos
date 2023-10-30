@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px;
+}
+
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divisor {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.grande {
+    height: 10px;
+}
+
+.grande,
+.mediano {
+    background-color: black;
+    border: 0;
+}
+
+.texto-chico {
+    font-size: 0.85rem;
+}
+
+.calorias h2 {
+    margin: 0;
+}
+
+.calorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contenedor-izquierda p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.calorias span {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: -7px -2px;
+}
+
+.mediano {
+    height: 5px;
+}
+
+.derecha {
+    justify-content: flex-end;
+}
+
+.sangrado {
+    margin-left: 1em;
+}
+
+.valor-diario p:not(.no-divisor) {
+    border-bottom: 1px solid #888989;
+}
+
+.doble-sangrado {
+    margin-left: 2em;
+}
+
+.no-borde-inferior {
+    border-bottom: 0;
+}
+
+.nota {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
