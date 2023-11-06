@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+
+@media(max-width:1000px) {
+    #navbar {
+        color: aqua;
+    }
+}
