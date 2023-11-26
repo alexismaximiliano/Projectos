@@ -1,0 +1,9 @@
+*{
+    background-color: #EEE9DA;
+}
+.navbar{ 
+   height: 100%;
+   width: 100%; 
+    border: 5px solid black;
+    background-color: #93BFCF;
+}
