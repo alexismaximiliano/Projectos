@@ -27,44 +27,48 @@ section {
     height: 80vh;
     box-sizing: border-box;
     min-height: min-content;
-    border: yellow solid 1px;
 }
 
 div {
     display: block;
-    border: red solid 1px;
 }
 
-#contenedor {
-    margin: 1rem 10rem;
+.contenedor {
+    margin: 1rem 5%;
     padding: 1%;
-    border: black solid 1px;
 }
 
-#flecha img {
+.flecha img {
     height: 3rem;
     bottom: 50px;
     right: 50px;
     z-index: 1;
     position: fixed;
 }
-
+footer{
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 /* navbar */
 
 nav,
-#links-navbar {
+.links-navbar {
     display: flex;
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
+    justify-content: center;
     height: 12vh;
     background-color: var(--color-3);
     width: 100%;
 }
 
-#links-navbar {
+.links-navbar {
     gap: 2rem;
     list-style: none;
     font-size: 1.2rem;
@@ -82,13 +86,13 @@ a:hover {
     text-decoration-color: var(--color-4);
 }
 
-#nombre {
+.nombre {
     font-size: 2.3rem;
 }
 
 /* incio */
 
-#inicio {
+.inicio {
     display: flex;
     justify-content: center;
     gap: 7rem;
@@ -97,7 +101,7 @@ a:hover {
     background-color: var(--color-2);
 }
 
-#foto {
+.foto {
     height: 400px;
     border-radius: 50%;
     border: var(--color-4) solid 2px;
@@ -118,7 +122,7 @@ h4 {
 }
 
 /* sobremi */
-#sobre_mi {
+.sobre_mi {
     position: relative;
     height: 60vh;
     background-color: var(--color-5);
@@ -138,22 +142,112 @@ p {
     letter-spacing: 1.5px;
     font-size: 1.1rem;
     font-weight: bolder;
+    padding: 0.5rem;
 }
 
 /* Aptitudes */
 
-#aptitudes{
+.aptitudes {
     background-color: var(--color-2);
 }
-#logo{
-    height: 150px;
-    display: inline-block;
-    justify-content: space-between;
+
+.centrar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+    height: 170px;
     padding: 15px;
 }
 
 /* proyectos */
 
-#proyectos{
+.proyectos {
     background-color: var(--color-5);
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    height: 25rem;
+    border: solid var(--color-4) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen {
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    animation: cambio_imagen 15s infinite;
+}
+@keyframes cambio_imagen{
+    0%{background-image:url('images/tienda/Captura1.JPG');}
+    33%{background-image:url('images/tienda/Captura2.JPG');}
+    66%{background-image:url('images/tienda/Captura3.JPG');}
+    100%{background-image:url('images/tienda/Captura4.JPG');}
+}
+.imagen:hover{
+    animation-play-state: paused;
+}
+h5 {
+    text-align: center;
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+button {
+    width: 5rem;
+    border-radius: 5px;
+    background-color: var(--color-3);
+    border: solid var(--color-4) 1.5px;
+    padding: 5px;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button a {
+    height: 100%;
+    width: 100%;
+    color: var(--color-1);
+    display: flex;
+    justify-content: center;
+}
+
+/* contacto */
+
+
+.logo-email{
+    width:2.5rem;
+    
+}
+.contacto a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+  padding: 10px;
+}
+.contenedor-email{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.logo-social{
+    width: 5rem;
+    padding: 1rem;
+    padding-left: 6rem;
+}
+.contacto .contenedor{
+    width: 90%;
+}
+.contenedor-logos{
+    display: flex;
+    justify-content: center;
 }
