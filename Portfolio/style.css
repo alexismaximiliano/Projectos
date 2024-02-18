@@ -6,14 +6,24 @@
     --color-5: #EFE8DB;
 
 }
-html{
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
+
 div {
     display: block;
 }
 
 section {
+
     padding-top: 3vh;
     height: 80vh;
     box-sizing: border-box;
@@ -22,12 +32,58 @@ section {
 
 }
 
+.contenedor {
+    margin: 1rem 5%;
+    padding: 1%;
+}
+
 .flecha img {
     height: 3rem;
     bottom: 50px;
     right: 50px;
     z-index: 1;
     position: fixed;
+}
+
+/* textos */
+
+#h1 {
+    font-size: 3.5rem;
+    font-style: oblique;
+    color: var(--color-4);
+    margin-bottom: 1rem;
+}
+
+#h2 {
+    color: var(--color-4);
+    text-align: center;
+    font-weight: 1500 bolder;
+    font-size: 2.5rem;
+    font-style: oblique;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#h4 {
+    font-size: 1.5rem;
+    color: var(--color-3);
+    text-align: center;
+    font-style: oblique;
+}
+
+h5 {
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+    padding: 0.5rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    padding: 0.5rem;
 }
 
 /* NAVBAR */
@@ -55,7 +111,7 @@ section {
     text-align: center;
     background-color: var(--color-2);
     /* width:-webkit-fill-available; */
-     width: 100%; 
+    width: 100%;
 }
 
 #foto-perfil {
@@ -63,31 +119,184 @@ section {
     border-radius: 50%;
     border: var(--color-4) solid 2px;
 }
-  
 
-#h1 {
-    font-size: 3.5rem;
-    font-style: oblique;
-    color: var(--color-4);
-    margin-bottom: 1rem;
+/* sobre mi */
+
+.sobre-mi {
+    position: relative;
+    background-color: var(--color-5);
 }
 
-#h4 {
-    font-size: 1.5rem;
-    color: var(--color-3);
+/* aptitudes */
+
+.aptitudes {
+    background-color: var(--color-2);
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 170px;
+    padding: 15px;
+}
+
+/* proyectos */
+
+#proyectos{
+height: 90vh;}
+
+#borde {
+    border: 1px solid black;
+}
+
+.proyectos {
+    background-color: var(--color-5);
+}
+
+.carta {
     text-align: center;
-    font-style: oblique;
+    width: 40%;
+    height: 30rem;
+    border: solid var(--color-4) 2px;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen {
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    animation: cambio_imagen 15s infinite;
+}
+
+@keyframes cambio_imagen {
+    0% {
+        background-image: url('images/tienda/Captura1.JPG');
+    }
+
+    33% {
+        background-image: url('images/tienda/Captura2.JPG');
+    }
+
+    66% {
+        background-image: url('images/tienda/Captura3.JPG');
+    }
+
+    100% {
+        background-image: url('images/tienda/Captura4.JPG');
+    }
+}
+
+.imagen:hover {
+    animation-play-state: paused;
+}
+
+#boton {
+    width: 5rem;
+    border-radius: 5px;
+    background-color: var(--color-3);
+    border: solid var(--color-4) 1.5px;
+    padding: 5px;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#boton a {
+    height: 100%;
+    width: 100%;
+    color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* contacto */
+
+footer {
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-email {
+    width: 2.5rem;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.contenedor-email {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.logo-social {
+    width: 10rem;
+    padding: 1rem;
+    padding-left: 6rem;
+}
+
+.contacto .contenedor {
+    width: 90%;
+}
+
+.contenedor-logos {
+    display: flex;
+    justify-content:space-evenly;
+    width: auto;
 }
 
 /* medias */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+
+    .inicio {
+        display: inline-block;
+        align-content: center;
+        height: 70vh;
+    }
+
+    #foto-perfil {
+        height: 50%;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carta {
+        width: auto;
+    }
     
-   .inicio{
-    display: inline-block;
-    align-content: center;
+   .contenedor-logos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 1px
+    grid-row-gap: 19px
+    justify-items: stretch
+    align-items: center
    }
-   #foto-perfil{
-    height: 50%;
+   .logo-social{
+    width: 80%;
+    padding: 0;
+     position: relative;
+     left:10px;
    }
 }
