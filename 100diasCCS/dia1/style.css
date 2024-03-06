@@ -1,0 +1,99 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame  */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(#59D5E0, #F5DD61, #FAA300, #F4538A);
+  color: #666;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.numero {
+  position: relative;
+  border-radius: 5px;
+}
+
+.uno-uno,
+.uno-dos {
+  border-radius: 4px;
+  position: absolute;
+  width: 20px;
+  background-color: #666;
+}
+
+.uno-uno {
+  height: 50px;
+  transform: rotate(50deg);
+  bottom: 25px;
+  right: 100px;
+
+}
+
+.uno-dos {
+  height: 100px;
+  right: 80px;
+  bottom: -27px;
+}
+
+.cero-uno,
+.cero-dos {
+  position: absolute;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 24px solid #666;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cero-uno {
+  bottom: -34px;
+  right: -15px;
+}
+
+.cero-dos {
+  bottom: -39px;
+  right: -108px;
+}
+
+h3,
+h5 {
+  text-align: center;
+  position: absolute;
+}
+
+h3 {
+  z-index: 2;
+  font-size: 25px;
+  top: 14px;
+  left: 20px;
+  transform: rotate(-6deg);
+}
+
+h5 {
+  z-index: 1;
+  font-size: 17px;
+  top: 44px;
+  left: -44px;
+  transform: rotate(3deg);
+}
